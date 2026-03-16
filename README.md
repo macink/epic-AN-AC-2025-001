@@ -6,7 +6,7 @@ This repository contains the code to reproduce the diffractive phi analysis and 
 ## Getting input file lists
 
 The analysis code is set up to take in filelists as input. To geneate filelists, run
-'''./prep_file_list.sh''' from eic-shell. You must select the data directory and the corresponding basename and files you wish to generate.
+```./prep_file_list.sh``` from eic-shell. You must select the data directory and the corresponding basename and files you wish to generate.
 
 ## Run analysis locally:
 
@@ -34,6 +34,6 @@ This will create a list of output root files in the specified output folder.
 
 ## Reproduce analysis note plots
 
-'AnalysisNote_plots_diffractive_phi.C' contains the macros to reproduce all of the plots in the analysis note. The input root file used to generate the plots must be updated accordingly.
+`AnalysisNote_plots_diffractive_phi.C` contains the macros to reproduce all of the plots in the analysis note. The input root file used to generate the plots must be updated accordingly.
 
 
