@@ -10,13 +10,22 @@ From eic-shell
 
 ```./eic-shell --version 25.12.0-stable```
 
-run `diffractive_vm_full_analysis.cxx(input_file.list,mode,cutMode,vetoes,pid,output.root)` where the options of the input parameters are defined in run_analysis.sh
+run `diffractive_vm_full_analysis.cxx(input_file.list,mode,cutMode,vetoes,pid,output.root)` where the options of the input parameters are defined in `run_analysis.sh`
 
 For example:
 
-'''diffractive_vm_full_analysis.cxx("subList_000.list","phi_coh","allCuts","allVetoes","withPID","testOutput.root")'''
+```root -b 'diffractive_vm_full_analysis.cxx("subList_000.list","phi_coh","allCuts","allVetoes","withPID","test")'```
 
-This will create a root file, testOutput.root that can be ran through the plot macros to reproduce the analysis note plots.
+This will create a root file, test_utput.root that can be ran through the plot macros to reproduce the analysis note plots.
 
 ## Run analysis on condor:
+
+In `run_analysis.sh`, modify the config filename for the analysis you are performing (i.e. coherent phi production, incoherent phi production, coherent rho production, or DIS). Adjust the input parameters as necessary. Modify directory locations to correspond to your analysis directory. `job_run.sh` and `run_DiffractiveVM.sh` also need to have the directories updated to match your own.
+
+To submit the jobs to condor, you must not be in eic-shell:
+
+```./run_analysis 2```
+
+This will create a list of output root files in the specified output folder.
+
 
