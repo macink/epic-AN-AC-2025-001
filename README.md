@@ -1,7 +1,9 @@
 # epic-AN-AC-2025-001
 Diffractive phi ePIC analysis note.
 
-This repository contains the code to reproduce the diffractive phi analysis and plots from the analysis note found at: 
+This repository contains the code to reproduce the diffractive phi analysis and plots from the analysis note found here: https://zenodo.org/records/17944278
+
+The folder analysis_root_files contains all of root files resulting from the analysis of coherent diffractive phi and rho (with and without PID), incoherent phi, and DIS. These files can be ran in the 'AnalysisNote_plots_diffractive_phi.C' macro to generate plots from the analysis note.
 
 ## Getting input file lists
 
@@ -20,7 +22,7 @@ For example:
 
 ```root -b 'diffractive_vm_full_analysis.cxx("subList_000.list","phi_coh","allCuts","allVetoes","withPID","no","test")'```
 
-This will create a root file, test_output.root from subList_000.list containing diffractive phi root files with all cuts, vetoes, and PID implemented in the analysis. This test_output.root file can be ran through the plot macro AnalysisNote_plots_diffractive_phi.C to reproduce the analysis note plots.
+This will create a root file, test_output.root from subList_000.list containing diffractive phi root files with all cuts, vetoes, and PID implemented in the analysis. This test_output.root file can be ran through the plot macro 'AnalysisNote_plots_diffractive_phi.C' to reproduce the analysis note plots.
 
 ## Run analysis on condor:
 
