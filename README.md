@@ -14,13 +14,13 @@ From eic-shell
 
 ```./eic-shell --version 25.12.0-stable```
 
-run `diffractive_vm_full_analysis.cxx(input_file.list,mode,cutMode,vetoes,pid,output)` where the options of the input parameters are defined in `run_analysis.sh`
+run `diffractive_vm_full_analysis.cxx("input_file.list","mode","cutMode","vetoes","pid","MCcuts","output")` where the options of the input parameters are defined in `run_analysis.sh`
 
 For example:
 
-```root -b 'diffractive_vm_full_analysis.cxx("subList_000.list","phi_coh","allCuts","allVetoes","withPID","test")'```
+```root -b 'diffractive_vm_full_analysis.cxx("subList_000.list","phi_coh","allCuts","allVetoes","withPID","no","test")'```
 
-This will create a root file, test_output.root that can be ran through the plot macros to reproduce the analysis note plots.
+This will create a root file, test_output.root from subList_000.list containing diffractive phi root files with all cuts, vetoes, and PID implemented in the analysis. This test_output.root file can be ran through the plot macro AnalysisNote_plots_diffractive_phi.C to reproduce the analysis note plots.
 
 ## Run analysis on condor:
 
