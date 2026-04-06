@@ -1,7 +1,7 @@
 # epic-AN-AC-2025-001
 Diffractive phi ePIC analysis note.
 
-This repository contains the code to reproduce the diffractive phi analysis and plots from the analysis note found here: https://zenodo.org/records/17944278
+This repository contains the code to reproduce the diffractive phi analysis and plots from the analysis note found here: [https://zenodo.org/records/17944278](https://zenodo.org/records/19439688)
 
 The folder analysis_root_files contains all of root files resulting from the analysis of coherent diffractive phi and rho (with and without PID), incoherent phi, and DIS. These files can be ran in the `AnalysisNote_plots_diffractive_phi.C` macro to generate plots from the analysis note.
 
