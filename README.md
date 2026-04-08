@@ -12,7 +12,7 @@ The analysis code is set up to take in filelists as input. To geneate filelists,
 
 ## Run analysis locally:
 
-From eic-shell 
+From eic-shell (**Note:** if you do not have eic-shell installed, you can find instructions for installation here: https://eic.github.io/tutorial-setting-up-environment/)
 
 ```./eic-shell --version 25.12.0-stable```
 
